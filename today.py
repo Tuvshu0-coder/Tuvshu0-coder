@@ -10,7 +10,7 @@ import hashlib
 # Account permissions: read:Followers, read:Starring, read:Watching
 # Repository permissions: read:Commit statuses, read:Contents, read:Issues, read:Metadata, read:Pull Requests
 # Issues and pull requests permissions not needed at the moment, but may be used in the future
-HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN']}
+HEADERS = {'authorization': 'token '+ os.environ['ACCESS_TOKEN'].strip()}
 USER_NAME = os.environ.get('USER_NAME', 'Tuvshu0-coder')
 
 # Set your birthday here, e.g. datetime.datetime(2008, 1, 31), and Uptime will count your
